@@ -1,0 +1,8 @@
+0     INFO  [main] core.PongServer - Starting server...
+53    DEBUG [main] network.MinaServer - starting network server on port [9090] ...
+1120  INFO  [main] physics.PhysicManager - PhysicManager up and running
+1588  INFO  [main] core.PongServer - Server is up and running [1,56s]
+93753 DEBUG [Thread-3] domain.Game - Adding player: Player1 for team: RED
+93825 DEBUG [Thread-3] util.MaterialGenerator - Loading Texture 2D [textures/energyBar.png]
+365418 INFO  [NioProcessor-2] domain.Game - Removed the following player: Player1
+365451 INFO  [NioProcessor-2] network.ServerHandler - Client successfully removed from the list of active clients.

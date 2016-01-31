@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Chris</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 734:737M;  Platform: x64;  Configuration: Release_Max2011_static</authoring_tool>
+      <source_data>file:///C:/Temp/CG/models/powerpong_prop_models/field/game_field.max</source_data>
+    </contributor>
+    <created>2011-02-02T13:40:32</created>
+    <modified>2011-02-02T13:40:32</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material__37">
+      <profile_COMMON>
+        <newparam sid="yellow_jpg-surface">
+          <surface type="2D">
+            <init_from>yellow_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="yellow_jpg-sampler">
+          <sampler2D>
+            <source>yellow_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="yellow_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>1</wire_size>
+            <wire_units>0</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material__37-material" name="Material__37">
+      <instance_effect url="#Material__37"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-Text002" name="Text002">
+      <mesh>
+        <source id="geom-Text002-positions">
+          <float_array id="geom-Text002-positions-array" count="78">0.8645892 2.633561 0.5 -0.4883664 0 0 -0.4883664 0 0.5 -0.8645893 2.633561 0.5 0.8645892 2.633561 0 -0.2208953 1.197063 0 0.442695 2.315218 0.5 -0.1555538 0 0.5 -0.1555538 0 0 -0.8645893 2.315218 0 0.1878289 1.31305 0 0.8645892 2.379203 0 0.3589601 1.660277 0.5 -0.3466875 0.8331966 0.5 0.442695 2.315218 0 0.04391216 0.9456677 0.5 0.8645892 2.379203 0.5 -0.06276688 1.554488 0.5 -0.8645893 2.315218 0.5 -0.8645893 2.633561 0 0.1205366 1.881551 0 -0.4329821 0.4868091 0 0.5478744 1.973415 0 -0.1032518 0.3829319 0 0.04391216 0.9456677 0 -0.4329821 0.4868091 0.5</float_array>
+          <technique_common>
+            <accessor source="#geom-Text002-positions-array" count="26" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Text002-normals">
+          <float_array id="geom-Text002-normals-array" count="198">-0.9302561 0.3668552 -0.006395597 -0.955049 0.2964227 -0.003878752 -0.8897362 0.4563384 0.01117242 0.9801595 -0.1963772 -0.02689733 0.9509282 -0.3094118 0 0.9503211 -0.3104814 -0.02216024 -0.802739 0.5963306 0 -0.8458875 0.5331283 0.01576602 -0.817066 0.5759146 0.02693867 0 -1 0 0 -1 0 0 -1 0 0.9099662 -0.4146562 -0.00466637 0.8699999 -0.4929815 -0.008322148 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 -0.9814523 0.1914469 -0.009974172 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 0 -1 0 -1 0 0 -1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0.8164473 -0.5751013 -0.05169463 0 0 -1 1 0 0 1 0 0 1 0 0 0 0 1 0.8080798 -0.5883681 -0.02880893 0.8179573 -0.575279 0 0 0 1 0 0 1 0 0 1 -0.9935904 0.1130407 0 -0.9935904 0.1130407 0 -0.984072 0.1777702 0 0 0 -1 0 0 -1 0 0 -1 0.9837413 -0.1766473 -0.03238465 1 0 0 0 0 1 -1 0 0 -1 0 0 -1 0 0 0 0 -1 -1 0 0 0 0 -1 0 0 -1 0.9908011 -0.1353264 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Text002-normals-array" count="66" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-Text002-map1">
+          <float_array id="geom-Text002-map1-array" count="162">5.894166 0 0 5.894166 0.5 0 3.354805 0.5 0 9.112895 0.5 0 3.354805 0 0 1.729178 0.5 0 9.112895 0 0 0 0 0 0 0.5 0 0.6436939 1.197063 0 1.729178 2.633561 0 0.3762229 0 0 4.66153 0 0 1.307284 2.315218 0 0.3762229 0 0 1.729178 2.633561 0 0 2.633561 0 0.7090355 0 0 6.226978 0.5 0 0.7090355 0 0 6.226978 0 0 2.047521 0 0 1.052418 1.31305 0 7.59035 0 0 1.729178 2.379203 0 8.858538 0 0 1.223549 1.660277 0 7.977535 0.5 0 0.5179018 0.8331966 0 5.046607 0.5 0 1.307284 2.315218 0 0 2.315218 0 0.9085014 0.9456677 0 7.19568 0.5 0 1.729178 2.379203 0 8.858538 0.5 0 0.8018224 1.554488 0 4.270589 0.5 0 0 2.315218 0 2.047521 0.5 0 0 2.633561 0 1.729178 0 0 0.9851259 1.881551 0 3.895549 0 0 0.4316071 0.4868091 0 5.403684 0 0 1.412464 1.973415 0 8.343337 0 0 0.7613375 0.3829319 0 6.613577 0 0 0.9085014 0.9456677 0 7.19568 0 0 0.4316071 0.4868091 0 5.403684 0.5 0</float_array>
+          <technique_common>
+            <accessor source="#geom-Text002-map1-array" count="54" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-Text002-vertices">
+          <input semantic="POSITION" source="#geom-Text002-positions"/>
+        </vertices>
+        <triangles material="Material__37_1" count="48">
+          <input semantic="VERTEX" source="#geom-Text002-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-Text002-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-Text002-map1" offset="2" set="1"/>
+          <p>5 0 12 13 1 29 17 2 37 23 3 49 24 4 51 15 5 33 14 6 4 20 7 43 6 8 2 9 9 21 14 10 4 6 11 2 10 12 23 12 13 27 15 5 33 4 14 7 3 15 5 0 16 8 5 17 9 24 18 50 23 19 48 5 0 12 21 20 45 13 1 29 17 21 36 15 22 32 12 23 26 0 24 15 3 25 16 6 26 13 17 21 36 13 27 28 15 22 32 1 28 0 7 29 18 2 30 1 5 17 9 23 19 48 21 31 44 1 28 0 8 32 20 7 29 18 9 9 21 6 11 2 18 33 39 4 14 7 19 34 41 3 15 5 20 35 42 22 36 46 10 37 22 10 12 23 22 38 47 12 13 27 14 39 30 22 36 46 20 35 42 11 40 25 4 41 6 0 42 3 6 26 13 12 23 26 16 43 34 11 44 25 16 45 35 12 13 27 25 46 52 2 47 14 7 48 17 1 49 0 2 50 1 25 51 53 4 52 10 11 53 24 14 39 30 4 52 10 14 39 30 19 54 40 25 46 52 7 48 17 15 22 32 23 3 49 15 5 33 7 55 18 0 24 15 6 26 13 16 43 34 11 40 25 0 42 3 16 56 35 6 26 13 17 21 36 12 23 26 20 7 43 17 2 37 6 8 2 3 25 16 18 57 38 6 26 13 19 58 41 18 59 39 3 60 5 19 54 40 14 39 30 9 61 31 19 58 41 9 62 21 18 59 39 20 35 42 10 37 22 5 17 9 20 7 43 5 0 12 17 2 37 21 31 44 23 19 48 1 63 11 21 20 45 1 49 0 25 51 53 14 39 30 11 53 24 22 36 46 22 38 47 11 44 25 12 13 27 1 63 11 23 19 48 8 64 19 8 65 20 23 3 49 7 55 18 5 17 9 10 37 22 24 18 50 24 4 51 10 12 23 15 5 33 13 27 28 25 46 52 15 22 32 21 20 45 25 51 53 13 1 29</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="yellow_jpg">
+      <init_from>./images/yellow.jpg</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-Text002" name="Text002">
+        <translate>-32 0 16.5</translate>
+        <rotate>0.5773502 0.5773503 0.5773503 -240</rotate>
+        <instance_geometry url="#geom-Text002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material__37_1" target="#Material__37-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

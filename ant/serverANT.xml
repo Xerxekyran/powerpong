@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project powerpong">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Xerxekyran/Desktop/powerpong/server.jar" filesetmanifest="mergewithoutmain" duplicate="preserve">
+            <manifest>
+                <attribute name="Main-Class" value="de.noobisoft.powerpong.startupServer"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="D:/Java_Workspace/powerpong/bin"/>
+            <fileset dir="D:/Java_Workspace/jVR/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/eclipse/plugins/org.junit_3.8.2.v3_8_2_v20100427-1100/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jogl2.0/gluegen-rt.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jogl2.0/jogl.all.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jogl2.0/nativewindow.all.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jogl2.0/newt.all.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/wiiusej/wiiusej.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jbullet/jbullet.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/jVR/libs/jbullet/vecmath.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/log4j-1.2.16.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-core-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-example-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-filter-compression-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-integration-beans-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-integration-jmx-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-integration-ognl-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-integration-xbean-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-statemachine-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/mina-transport-apr-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/slf4j-api-1.6.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/slf4j-log4j12-1.6.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="D:/Java_Workspace/powerpong/lib/jl1.0.1.jar"/>
+        </jar>
+    </target>
+</project>

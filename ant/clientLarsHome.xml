@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project powerpong with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Xerxekyran/Desktop/powerpong/client.jar" duplicate="preserve">
+            <manifest>
+                <attribute name="Main-Class" value="de.noobisoft.powerpong.startupClient"/>
+                <attribute name="Class-Path" value=". lib/junit.jar lib/gluegen-rt.jar lib/jogl.all.jar lib/nativewindow.all.jar lib/newt.all.jar lib/wiiusej.jar lib/jbullet.jar lib/vecmath.jar lib/log4j-1.2.16.jar lib/mina-core-2.0.1.jar lib/mina-example-2.0.1.jar lib/mina-filter-compression-2.0.1.jar lib/mina-integration-beans-2.0.1.jar lib/mina-integration-jmx-2.0.1.jar lib/mina-integration-ognl-2.0.1.jar lib/mina-integration-xbean-2.0.1.jar lib/mina-statemachine-2.0.1.jar lib/mina-transport-apr-2.0.1.jar lib/slf4j-api-1.6.1.jar lib/slf4j-log4j12-1.6.1.jar lib/jl1.0.1.jar"/>
+            </manifest>
+            <fileset dir="D:/Java_Workspace/powerpong/bin"/>
+            <fileset dir="D:/Java_Workspace/jVR/bin"/>
+        </jar>        
+    </target>
+</project>

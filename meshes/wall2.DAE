@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Chris</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.2.5;  Revision: 734:737M;  Platform: x64;  Configuration: Release_Max2011_static</authoring_tool>
+      <source_data>file:///C:/Temp/CG/models/powerpong_prop_models/field/game_field.max</source_data>
+    </contributor>
+    <created>2011-01-20T17:45:23</created>
+    <modified>2011-01-20T17:45:23</modified>
+    <unit name="inch" meter="0.0254"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="Material__25">
+      <profile_COMMON>
+        <newparam sid="metal-scratch_jpg-surface">
+          <surface type="2D">
+            <init_from>metal-scratch_jpg</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="metal-scratch_jpg-sampler">
+          <sampler2D>
+            <source>metal-scratch_jpg-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="metal-scratch_jpg-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <apply_reflection_dimming>0</apply_reflection_dimming>
+            <dim_level>0</dim_level>
+            <falloff_type>0</falloff_type>
+            <index_of_refraction>1.5</index_of_refraction>
+            <opacity_type>0</opacity_type>
+            <reflection_level>3</reflection_level>
+            <wire_size>8</wire_size>
+            <wire_units>1</wire_units>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_lock>1</ambient_diffuse_lock>
+            <ambient_diffuse_texture_lock>1</ambient_diffuse_texture_lock>
+            <diffuse_specular_lock>0</diffuse_specular_lock>
+            <soften>0.1</soften>
+            <use_self_illum_color>0</use_self_illum_color>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material__25-material" name="Material__25">
+      <instance_effect url="#Material__25"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-wall002" name="wall002">
+      <mesh>
+        <source id="geom-wall002-positions">
+          <float_array id="geom-wall002-positions-array" count="93">-0.5 50 0 -0.5 -50 25 -0.5 50 25 -0.5 -50 0 -0.5 7.7314 0.2678848 -0.5 7.620438 0 -0.5 8.02919 1.508271 -0.5 8.129274 2.77997 -0.5 8.029189 4.051669 -0.5 7.731399 5.292055 -0.5 7.243235 6.470585 -0.5 6.576719 7.558239 -0.5 5.748262 8.528236 -0.5 4.778264 9.356693 -0.5 3.690609 10.02321 -0.5 2.512079 10.51137 -0.5 1.271693 10.80916 -0.5 -6.52519e-6 10.90924 -0.5 -1.271706 10.80916 -0.5 -2.512091 10.51137 -0.5 -3.690621 10.0232 -0.5 -4.778275 9.356685 -0.5 -5.748272 8.528227 -0.5 -6.576727 7.558228 -0.5 -7.243241 6.470573 -0.5 -7.731403 5.292043 -0.5 -8.029191 4.051656 -0.5 -8.129274 2.779957 -0.5 -8.029188 1.508258 -0.5 -7.731395 0.2678724 -0.5 -7.620439 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wall002-positions-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall002-normals">
+          <float_array id="geom-wall002-normals-array" count="93">-1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wall002-normals-array" count="31" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-wall002-map1">
+          <float_array id="geom-wall002-map1-array" count="93">6.445921 6.415453 0 9.209994 5.572131 0 6.514519 6.443867 0 6.749716 7.011683 0 9.209994 7.027276 0 6.743258 7.027276 0 3.389413 7.027276 0 5.849691 7.011684 0 5.85615 7.027276 0 6.767049 6.939486 0 5.832358 6.939487 0 5.826532 6.865466 0 3.389413 5.572131 0 5.832358 6.791446 0 5.849691 6.719248 0 6.772874 6.865465 0 6.767049 6.791446 0 6.749716 6.719248 0 5.878105 6.650651 0 6.721302 6.650651 0 5.9169 6.587343 0 6.682507 6.587343 0 5.96512 6.530883 0 6.634286 6.530883 0 6.02158 6.482662 0 6.577826 6.482662 0 6.084888 6.443868 0 6.153485 6.415453 0 6.225683 6.39812 0 6.299703 6.392295 0 6.373724 6.39812 0</float_array>
+          <technique_common>
+            <accessor source="#geom-wall002-map1-array" count="31" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-wall002-vertices">
+          <input semantic="POSITION" source="#geom-wall002-positions"/>
+        </vertices>
+        <triangles material="Material__25_1" count="29">
+          <input semantic="VERTEX" source="#geom-wall002-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-wall002-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#geom-wall002-map1" offset="2" set="1"/>
+          <p>15 0 0 2 1 1 14 2 2 4 3 3 0 4 4 5 5 5 3 6 6 29 7 7 30 8 8 6 9 9 0 4 4 4 3 3 3 6 6 28 10 10 29 7 7 3 6 6 27 11 11 28 10 10 1 12 12 27 11 11 3 6 6 1 12 12 26 13 13 27 11 11 1 12 12 25 14 14 26 13 13 7 15 15 0 4 4 6 9 9 7 15 15 2 1 1 0 4 4 8 16 16 2 1 1 7 15 15 9 17 17 2 1 1 8 16 16 1 12 12 24 18 18 25 14 14 10 19 19 2 1 1 9 17 17 1 12 12 23 20 20 24 18 18 11 21 21 2 1 1 10 19 19 1 12 12 22 22 22 23 20 20 12 23 23 2 1 1 11 21 21 1 12 12 21 24 24 22 22 22 13 25 25 2 1 1 12 23 23 1 12 12 20 26 26 21 24 24 14 2 2 2 1 1 13 25 25 1 12 12 19 27 27 20 26 26 2 1 1 19 27 27 1 12 12 2 1 1 18 28 28 19 27 27 2 1 1 17 29 29 18 28 28 2 1 1 16 30 30 17 29 29 2 1 1 15 0 0 16 30 30</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="metal-scratch_jpg">
+      <init_from>./images/metal-scratch.jpg</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-wall002" name="wall002">
+        <translate>32.5 0 0</translate>
+        <instance_geometry url="#geom-wall002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material__25_1" target="#Material__25-material">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

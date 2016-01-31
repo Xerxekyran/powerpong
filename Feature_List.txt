@@ -1,0 +1,36 @@
+*************************
+*       Shader       	* 
+*						*
+* Phong material shader	*
+* Portal shader			*
+* Environment mapping	*
+* Normal mapping		*
+* Parallax mapping		*
+* Weapon Energy Bar		*
+* Blob-waving			*
+* Pointsprites			*
+*************************
+
+*************************
+* 	Post processing		*
+*						*
+* Pixelation 			*
+* Bloom					*
+* Nightvision			*
+* Depth of Field		*
+*************************
+
+*************************
+*	Miscellaneous		*
+*						*
+* Physiks with jBullet	*
+* Particlesystem		*
+* Portal				*
+* Wii Controle			*
+* Multiplayer			*
+* Soundeffects			*
+* Custom MP3 Music		*
+*************************
+
+credits: 
+- Loksounds: http://www.kalles-homepage.de/loksounds/index_loksounds.htm
